@@ -1,0 +1,9 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+
+# Local Claude Code tool permissions (machine-specific, not project config)
+.claude/settings.local.json
