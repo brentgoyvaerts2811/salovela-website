@@ -2,6 +2,13 @@
 .DS_Store
 Thumbs.db
 
+# Restanten van gekoppelde mappen: ontstaan wanneer een bestand wordt
+# overschreven terwijl het nog geopend is. Nooit meecommitten.
+.fuse_hidden*
+
+# Werkmap voor prototypes, hoort niet op de live site
+Interactive hub/
+
 # Editor
 .vscode/
 
