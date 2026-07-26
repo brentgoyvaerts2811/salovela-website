@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jouw tijdsindeling — waar kan AI ondersteunen? | Salovela</title>
+  <meta name="description" content="Een korte, intuïtieve scan die toont waar AI jouw werk kan ondersteunen — en waar je er beter van afblijft.">
+  <link rel="canonical" href="https://salovela.be/scan.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://salovela.be/scan.html">
+  <meta property="og:site_name" content="Salovela">
+  <meta property="og:locale" content="nl_BE">
+  <meta property="og:title" content="Jouw tijdsindeling — waar kan AI ondersteunen?">
+  <meta property="og:description" content="Een korte, intuïtieve scan die toont waar AI jouw werk kan ondersteunen — en waar je er beter van afblijft.">
+  <meta property="og:image" content="https://salovela.be/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jouw tijdsindeling — waar kan AI ondersteunen?">
+  <meta name="twitter:description" content="Een korte, intuïtieve scan die toont waar AI jouw werk kan ondersteunen — en waar je er beter van afblijft.">
+  <meta name="twitter:image" content="https://salovela.be/assets/images/og-image.jpg">
+
+  <link rel="icon" type="image/png" href="assets/images/salovela-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/salovela-mark.png" alt="Salovela logo">
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html#diensten" data-i18n="nav.services">Diensten</a>
+        <a href="index.html#aanpak" data-i18n="nav.process">Aanpak</a>
+        <a href="scan.html" data-i18n="nav.scan">Waar zit jouw tijd?</a>
+        <a href="over.html" data-i18n="nav.about">Over</a>
+        <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-option active" data-lang="nl">NL</span>
+          <span class="lang-sep">/</span>
+          <span class="lang-option" data-lang="en">EN</span>
+        </button>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <h1 data-i18n="scan.hero.title">Jouw tijdsindeling — waar kan AI ondersteunen?</h1>
+        <p data-i18n="scan.hero.subtitle">Een korte, intuïtieve scan die toont waar AI jouw werk kan ondersteunen. Waar gaat jouw tijd naartoe, en waar blijf je er beter van af?</p>
+      </div>
+
+      <div class="hero-blob hero-blob-1" aria-hidden="true">
+        <img src="assets/images/salovela-logo.png" alt="" class="hero-blob-mark">
+      </div>
+      <div class="hero-blob hero-blob-3" aria-hidden="true"></div>
+    </section>
+
+    <section class="scan">
+      <div class="container scan-inner">
+
+        <div class="scan-block">
+          <span class="scan-step-label" data-i18n="scan.step1.label">Stap 1</span>
+          <h2 data-i18n="scan.step1.title">Wat voor zaak heb je?</h2>
+          <p class="scan-hint" data-i18n="scan.step1.hint">De balkjes worden automatisch op onze tijdsschatting geplaatst. Daarna pas jij ze aan aan jouw situatie.</p>
+          <div class="scan-sectors" id="scan-sectors" role="group"></div>
+        </div>
+
+        <div class="scan-block scan-locked" id="scan-step2">
+          <span class="scan-step-label" data-i18n="scan.step2.label">Stap 2</span>
+          <h2 data-i18n="scan.step2.title">Klopt dit voor jouw week?</h2>
+          <p class="scan-hint" data-i18n="scan.step2.hint">Schuif per taak naar het aantal uren dat eraan opgaat, over je hele team samen.</p>
+
+          <div class="scan-unit" id="scan-unit" role="group" aria-label="Tijdseenheid">
+            <button type="button" class="scan-unit-btn active" data-unit="week" data-i18n="scan.unit.week">per week</button>
+            <button type="button" class="scan-unit-btn" data-unit="dag" data-i18n="scan.unit.day">per dag</button>
+          </div>
+
+          <div class="scan-progress">
+            <div class="scan-progress-track">
+              <div class="scan-progress-fill" id="scan-progress-fill"></div>
+            </div>
+            <span class="scan-progress-text" id="scan-progress-text">0 / 6</span>
+          </div>
+
+          <div class="scan-tasks" id="scan-tasks"></div>
+        </div>
+
+        <div class="scan-block scan-locked" id="scan-step3">
+          <div class="scan-result">
+            <div class="scan-result-head">
+              <span class="scan-step-label" style="margin-bottom:0" data-i18n="scan.result.label">Stap 3</span>
+              <span class="scan-badge" id="scan-badge" data-i18n="scan.badge.none">Nog niets ingesteld</span>
+            </div>
+
+            <p class="scan-empty" id="scan-empty" data-i18n="scan.result.empty">Kies hierboven een type zaak om te beginnen.</p>
+
+            <div id="scan-report" hidden>
+              <div class="scan-phase">
+                <h2 data-i18n="scan.facts.title">Wat jij hebt ingevuld</h2>
+                <p class="scan-hint" data-i18n="scan.facts.body">Dit zijn jouw cijfers, niet de onze. Klopt er iets niet, schuif het gerust bij.</p>
+                <p class="scan-facts-total" id="scan-facts-total"></p>
+              </div>
+
+              <div class="scan-phase">
+                <h2 data-i18n="scan.method.title">Hoe wij hiernaar kijken</h2>
+                <p class="scan-hint" data-i18n="scan.method.body">Per taak schatten wij in hoeveel procent van dat werk AI vandaag kan overnemen. Dat percentage is dus wat wij dénken dat je op die taak zou kunnen besparen — gebaseerd op wat we in de praktijk zien, niet op een meting bij jou.</p>
+                <div class="scan-breakdown" id="scan-breakdown"></div>
+                <p class="scan-note" data-i18n="scan.method.note">De percentages zijn bewust voorzichtig en nooit 100%: er blijft altijd werk dat een mens moet doen. Vind je er één te hoog of te laag? Dan hebben we meteen iets om over te praten.</p>
+              </div>
+
+              <div class="scan-phase last">
+                <h2 data-i18n="scan.estimate.title">Wat dat ruwweg zou betekenen</h2>
+                <div class="scan-headline">
+                  <span class="scan-big" id="scan-rec-hours">0</span>
+                  <span class="scan-big-unit" id="scan-rec-unit">uur per week</span>
+                </div>
+                <div class="scan-money"><span id="scan-rec-money">&euro; 0</span> <span data-i18n="scan.estimate.peryear">per jaar</span></div>
+
+                <div class="scan-rate">
+                  <div class="scan-rate-row">
+                    <label for="scan-rate" data-i18n="scan.rate.label">Gerekend aan een kost per uur van</label>
+                    <span aria-hidden="true">&euro;</span>
+                    <input type="number" id="scan-rate" class="scan-rate-input" value="30" min="5" step="1">
+                  </div>
+                  <p class="scan-rate-note" data-i18n="scan.rate.note">Het doorsnee brutoloon in de Vlaamse privésector is ongeveer &euro;3.585 per maand (SD Worx, 2026), ofwel zo'n &euro;22 bruto per uur. Bruto is echter niet wat je zaak effectief betaalt: met patronale bijdragen, eindejaarspremie en dubbel vakantiegeld kom je rond 136% van het bruto. Daarom staat hier &euro;30 — de reële kost per gewerkt uur. Pas aan naar jouw situatie.</p>
+                </div>
+
+                <p class="scan-note" data-i18n="scan.estimate.hedge">Dit is een orde van grootte op basis van jouw invoer en onze percentages hierboven. Geen meting van jouw zaak, en geen belofte — een vertrekpunt voor een gesprek.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="scan-advice" id="scan-advice"></div>
+
+          <p class="scan-disclaimer" data-i18n="scan.disclaimer">De voorgestelde uren zijn richtcijfers uit onze praktijk, geen meting van jouw zaak. De percentages zijn onze eigen inschatting van wat vandaag haalbaar is. Bedoeld om het gesprek scherper te maken, niet om een besluit op te bouwen.</p>
+
+          <div class="scan-cta neu-raised" style="border-radius:var(--radius)">
+            <h2 data-i18n="scan.cta.title">Dit is de korte versie</h2>
+            <p data-i18n="scan.cta.body">In een gesprek leren wij jouw workflow kennen en luisteren we naar jouw bedrijf. Geen verkooppraat of projecten aansmeren, gewoon een gesprek om te kijken of wij jullie kunnen ondersteunen — als er niets zinnigs te automatiseren valt, zeggen we dat ook.</p>
+            <a href="index.html#contact" class="button button-primary" id="scan-cta" data-i18n="scan.cta.button">Plan een gesprek</a>
+            <p class="scan-note scan-cta-note" data-i18n="scan.cta.note">We nemen een overzicht van jouw scan mee naar het formulier, zodat je niet opnieuw moet uitleggen waar het over gaat. Je ziet het daar staan en kan het met één klik weglaten.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/images/salovela-logo.png" alt="Salovela logo" class="footer-logo">
+      <div class="footer-text">
+        <span>&copy; 2026 Salovela</span>
+        <span data-i18n="footer.tagline">Een partnerschap in jouw AI journey.</span>
+      </div>
+    </div>
+    <div class="container footer-legal">
+      <span>Salovela &middot; KBO 1039.442.102 &middot; BTW BE1039.442.102 &middot; Moststraat 8, 2811 Hombeek</span>
+      <a href="privacybeleid.html">Privacybeleid</a>
+    </div>
+  </footer>
+
+  <script data-goatcounter="https://salovela.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/scan.js"></script>
+</body>
+</html>

@@ -39,6 +39,7 @@
       <nav class="nav" id="nav">
         <a href="#diensten" data-i18n="nav.services">Diensten</a>
         <a href="#aanpak" data-i18n="nav.process">Aanpak</a>
+        <a href="scan.html" data-i18n="nav.scan">Waar zit jouw tijd?</a>
         <a href="over.html" data-i18n="nav.about">Over</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
@@ -222,9 +223,19 @@
             <button type="button" class="topic-chip" role="radio" aria-checked="false" data-i18n="contact.topic.existing">Bestaande tools</button>
           </div>
 
+          <div class="scan-summary" id="scan-summary" hidden>
+            <div class="scan-summary-head">
+              <span class="scan-summary-title" data-i18n="scan.summary.title">Jouw tijdscan</span>
+              <button type="button" class="scan-summary-remove" id="scan-summary-remove" data-i18n="scan.summary.remove">Niet meesturen</button>
+            </div>
+            <p class="scan-summary-intro" data-i18n="scan.summary.intro">Dit overzicht sturen we mee met je bericht, zodat je het niet hoeft uit te typen.</p>
+            <div id="scan-summary-body"></div>
+          </div>
+
           <form id="contact-form" class="contact-form">
             <input type="hidden" name="access_key" value="03b7c5b4-e16c-43b0-8f05-cd8a8c2d85a0">
             <input type="hidden" name="subject" id="form-subject" value="Aanvraag via website: Algemene vraag">
+            <input type="hidden" name="tijdscan" id="form-scan" value="">
             <input type="hidden" name="from_name" value="Salovela website">
             <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
