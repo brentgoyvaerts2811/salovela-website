@@ -387,10 +387,38 @@
      alleen keuzes in brede categorieën: nooit een individuele scan, nooit
      iets dat naar een persoon te herleiden is. */
 
-  function countEvent(path) {
-    if (window.goatcounter && typeof window.goatcounter.count === "function") {
-      window.goatcounter.count({ path: path, title: "Tijdscan", event: true });
+  /* count.js wordt async geladen en is dus niet meteen beschikbaar. We
+     bewaren events tot het script er is en sturen ze dan alsnog door.
+     no_session zorgt dat elk event telt: zonder die vlag negeert
+     GoatCounter herhalingen binnen dezelfde sessie. */
+  const eventQueue = [];
+  let eventTimer = null;
+
+  function flushEvents() {
+    if (!window.goatcounter || typeof window.goatcounter.count !== "function") return false;
+    while (eventQueue.length) {
+      window.goatcounter.count({
+        path: eventQueue.shift(),
+        title: "Tijdscan",
+        event: true,
+        no_session: true
+      });
     }
+    return true;
+  }
+
+  function countEvent(path) {
+    eventQueue.push(path);
+    if (flushEvents() || eventTimer) return;
+
+    let tries = 0;
+    eventTimer = setInterval(function () {
+      tries++;
+      if (flushEvents() || tries > 50) {
+        clearInterval(eventTimer);
+        eventTimer = null;
+      }
+    }, 100);
   }
 
   /* Uitkomst in brede banden, zodat er geen exacte waarde wordt geteld. */
