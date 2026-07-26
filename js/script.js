@@ -76,7 +76,7 @@ const translations = {
     "contact.orReach": "Of bereik ons rechtstreeks:",
     "footer.tagline": "Een partnerschap in jouw AI journey.",
     "legal.hero.title": "Privacybeleid",
-    "legal.hero.updated": "Laatst bijgewerkt: 16 juli 2026",
+    "legal.hero.updated": "Laatst bijgewerkt: 26 juli 2026",
     "legal.intro": "Salovela hecht belang aan een zorgvuldige omgang met jouw gegevens. Dit beleid legt in gewone taal uit welke gegevens we verzamelen wanneer je contact opneemt, waarom, en welke rechten je hebt.",
     "legal.who.title": "Wie zijn we",
     "legal.data.title": "Welke gegevens we verzamelen",
@@ -90,12 +90,14 @@ const translations = {
     "legal.retention.title": "Hoe lang we ze bewaren",
     "legal.retention.body": "We bewaren je bericht en contactgegevens zolang nodig om je vraag te beantwoorden en, bij een samenwerking, zolang de zakelijke relatie en de wettelijke bewaartermijnen (o.a. boekhoudkundig) dat vereisen. Nadien verwijderen we ze.",
     "legal.sharing.title": "Delen met derden",
-    "legal.sharing.intro": "We verkopen je gegevens nooit. Voor de goede werking van de site doen we een beroep op twee externe verwerkers:",
-    "legal.sharing.item1": "<strong>Web3Forms</strong> verwerkt berichten die je via het contactformulier verstuurt en stuurt ze door naar onze eigen mailbox.",
-    "legal.sharing.item2": "<strong>GoatCounter</strong> verwerkt de anonieme bezoekersstatistieken hierboven beschreven.",
-    "legal.sharing.outro": "Geen van beide gebruikt jouw gegevens voor eigen doeleinden, reclame of profilering.",
+    "legal.sharing.intro": "We verkopen je gegevens nooit. Voor de goede werking van de site doen we een beroep op drie externe partijen:",
+    "legal.sharing.item1": "<strong>Web3Forms</strong> verwerkt berichten die je via het contactformulier verstuurt en stuurt ze door naar onze eigen mailbox. Hun servers staan in de Verenigde Staten. Zij bewaren de inhoud van je bericht niet, maar hun serverlogs kunnen tot twee maanden gegevens bevatten. Verkies je dat je bericht de EU niet verlaat, mail ons dan rechtstreeks op brent@salovela.be of bel ons.",
+    "legal.sharing.item2": "<strong>GoatCounter</strong> verwerkt de anonieme bezoekersstatistieken hierboven beschreven. De gegevens staan op servers in Finland en Duitsland, dus binnen de EU.",
+    "legal.sharing.item3": "<strong>GitHub Pages</strong> host deze website. Zoals elke webserver registreren zij het IP-adres van bezoekers in hun logbestanden, om de site te kunnen leveren en beveiligen. GitHub is een Amerikaans bedrijf.",
+    "legal.sharing.transfer": "Bij Web3Forms en GitHub worden gegevens dus buiten de Europese Economische Ruimte verwerkt. Beide baseren die doorgifte op de standaardbepalingen inzake gegevensbescherming van de Europese Commissie. We hebben dit bewust beperkt gehouden: de lettertypes op deze site worden door onszelf geserveerd in plaats van door Google, zodat er bij een gewoon bezoek geen enkel gegeven naar een derde partij vertrekt.",
+    "legal.sharing.outro": "Geen van deze partijen gebruikt jouw gegevens voor eigen doeleinden, reclame of profilering.",
     "legal.rights.title": "Jouw rechten",
-    "legal.rights.body": "Onder de AVG/GDPR heb je het recht om je gegevens in te kijken, te laten corrigeren of te laten verwijderen, en om bezwaar te maken tegen de verwerking ervan. Neem hiervoor contact op via <a href=\"mailto:brent@salovela.be\">brent@salovela.be</a>. Je hebt ook het recht om een klacht in te dienen bij de <a href=\"https://www.gegevensbeschermingsautoriteit.be\" target=\"_blank\" rel=\"noopener noreferrer\">Belgische Gegevensbeschermingsautoriteit</a>.",
+    "legal.rights.body": "Onder de AVG/GDPR heb je het recht om je gegevens in te kijken, te laten corrigeren of te laten verwijderen, om de verwerking ervan te laten beperken, om je gegevens in een gangbaar formaat te ontvangen of te laten overdragen, en om bezwaar te maken tegen de verwerking. Neem hiervoor contact op via <a href=\"mailto:brent@salovela.be\">brent@salovela.be</a>; we reageren binnen één maand. Je hebt ook het recht om een klacht in te dienen bij de <a href=\"https://www.gegevensbeschermingsautoriteit.be\" target=\"_blank\" rel=\"noopener noreferrer\">Belgische Gegevensbeschermingsautoriteit</a>.",
     "legal.changes.title": "Wijzigingen aan dit beleid",
     "legal.changes.body": "We kunnen dit beleid aanpassen wanneer de site nieuwe functionaliteit krijgt. De datum bovenaan deze pagina geeft aan wanneer het beleid voor het laatst is bijgewerkt.",
 
@@ -209,7 +211,8 @@ const translations = {
     "scan.summary.focus": "Grootste kans",
     "scan.summary.legend": "Donker = tijd die volgens de scan met AI ondersteund kan worden.",
     "scan.summary.peryear": "per jaar aan {rate}/u",
-    "contact.form.subjectDefault": "Aanvraag via website: Algemene vraag"
+    "contact.form.subjectDefault": "Aanvraag via website: Algemene vraag",
+    "contact.form.privacy": "We gebruiken je gegevens enkel om te antwoorden op je bericht. Meer weten? Lees ons <a href=\"privacybeleid.html\">privacybeleid</a>."
   },
   en: {
     "nav.services": "Services",
@@ -288,7 +291,7 @@ const translations = {
     "contact.orReach": "Or reach us directly:",
     "footer.tagline": "A partnership in your AI journey.",
     "legal.hero.title": "Privacy Policy",
-    "legal.hero.updated": "Last updated: July 16, 2026",
+    "legal.hero.updated": "Last updated: 26 July 2026",
     "legal.intro": "Salovela takes care in how it handles your data. This policy explains, in plain language, what data we collect when you get in touch, why, and what rights you have.",
     "legal.who.title": "Who we are",
     "legal.data.title": "What data we collect",
@@ -302,12 +305,14 @@ const translations = {
     "legal.retention.title": "How long we keep it",
     "legal.retention.body": "We keep your message and contact details for as long as needed to answer your question, and, in the case of a collaboration, for as long as the business relationship and legal retention periods (e.g. accounting) require. Afterwards, we delete them.",
     "legal.sharing.title": "Sharing with third parties",
-    "legal.sharing.intro": "We never sell your data. For the site to function properly, we rely on two external processors:",
-    "legal.sharing.item1": "<strong>Web3Forms</strong> processes messages you send via the contact form and forwards them to our own mailbox.",
-    "legal.sharing.item2": "<strong>GoatCounter</strong> processes the anonymous visitor statistics described above.",
-    "legal.sharing.outro": "Neither uses your data for their own purposes, advertising, or profiling.",
+    "legal.sharing.intro": "We never sell your data. For the site to function properly, we rely on three external parties:",
+    "legal.sharing.item1": "<strong>Web3Forms</strong> processes messages you send via the contact form and forwards them to our own mailbox. Their servers are in the United States. They don't retain the content of your message, but their server logs may hold data for up to two months. If you'd rather your message didn't leave the EU, email us directly at brent@salovela.be or give us a call.",
+    "legal.sharing.item2": "<strong>GoatCounter</strong> processes the anonymous visitor statistics described above. The data sits on servers in Finland and Germany, so within the EU.",
+    "legal.sharing.item3": "<strong>GitHub Pages</strong> hosts this website. Like any web server, they record visitors' IP addresses in their log files in order to deliver and secure the site. GitHub is a US company.",
+    "legal.sharing.transfer": "So with Web3Forms and GitHub, data is processed outside the European Economic Area. Both base that transfer on the European Commission's standard contractual clauses. We've deliberately kept this limited: the fonts on this site are served by us rather than by Google, so an ordinary visit sends nothing at all to a third party.",
+    "legal.sharing.outro": "None of these parties uses your data for their own purposes, advertising, or profiling.",
     "legal.rights.title": "Your rights",
-    "legal.rights.body": "Under the GDPR, you have the right to access, correct, or delete your data, and to object to its processing. To do so, contact us at <a href=\"mailto:brent@salovela.be\">brent@salovela.be</a>. You also have the right to file a complaint with the <a href=\"https://www.gegevensbeschermingsautoriteit.be\" target=\"_blank\" rel=\"noopener noreferrer\">Belgian Data Protection Authority</a>.",
+    "legal.rights.body": "Under the GDPR, you have the right to access, correct, or delete your data, to have its processing restricted, to receive your data in a common format or have it transferred, and to object to its processing. To do so, contact us at <a href=\"mailto:brent@salovela.be\">brent@salovela.be</a>; we respond within one month. You also have the right to file a complaint with the <a href=\"https://www.gegevensbeschermingsautoriteit.be\" target=\"_blank\" rel=\"noopener noreferrer\">Belgian Data Protection Authority</a>.",
     "legal.changes.title": "Changes to this policy",
     "legal.changes.body": "We may update this policy when the site gains new functionality. The date at the top of this page shows when it was last updated.",
 
@@ -421,7 +426,8 @@ const translations = {
     "scan.summary.focus": "Biggest opportunity",
     "scan.summary.legend": "Dark = time the scan reckons AI could support.",
     "scan.summary.peryear": "per year at {rate}/h",
-    "contact.form.subjectDefault": "Website enquiry: General question"
+    "contact.form.subjectDefault": "Website enquiry: General question",
+    "contact.form.privacy": "We only use your details to reply to your message. Want to know more? Read our <a href=\"privacybeleid.html\">privacy policy</a>."
   }
 };
 
