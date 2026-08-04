@@ -423,7 +423,7 @@ const translations = {
 
     "scan.cta.title": "This is the short version",
     "scan.cta.body": "In a conversation we get to know your workflow and listen to your business. No sales talk, no projects pushed on you — just a conversation to see whether we can support you. If there's nothing sensible to automate, we'll say so.",
-    "scan.cta.button": "Book a conversation",
+    "scan.cta.button": "Start a conversation",
     "scan.cta.note": "We'll carry an overview of your scan over to the form, so you don't have to explain it again. You'll see it there and can leave it out with one click.",
 
     "scan.handover.subject": "Time scan via website: {sector}",
