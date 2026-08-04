@@ -202,8 +202,8 @@ const translations = {
     "scan.disclaimer": "De voorgestelde uren zijn richtcijfers uit onze praktijk, geen meting van jouw zaak. De percentages zijn onze eigen inschatting van wat vandaag haalbaar is. Bedoeld om het gesprek scherper te maken, niet om een besluit op te bouwen.",
 
     "scan.cta.title": "Dit is de korte versie",
-    "scan.cta.body": "In een gesprek leren wij jouw workflow kennen en luisteren we naar jouw bedrijf. Geen verkooppraat of projecten aansmeren, gewoon een gesprek om te kijken of wij jullie kunnen ondersteunen — als er niets zinnigs te automatiseren valt, zeggen we dat ook.",
-    "scan.cta.button": "Plan een gesprek",
+    "scan.cta.body": "In een kosteloos gesprek leren wij jouw workflow kennen en luisteren we naar jouw bedrijf. Geen verkooppraat of projecten aansmeren, gewoon een gesprek om te kijken of wij jullie kunnen ondersteunen — als er niets zinnigs te automatiseren valt, zeggen we dat ook.",
+    "scan.cta.button": "Start een gesprek",
     "scan.cta.note": "We nemen een overzicht van jouw scan mee naar het formulier, zodat je niet opnieuw moet uitleggen waar het over gaat. Je ziet het daar staan en kan het met één klik weglaten.",
 
     "scan.handover.subject": "Tijdscan via website: {sector}",
@@ -422,7 +422,7 @@ const translations = {
     "scan.disclaimer": "The suggested hours are indicative figures from our practice, not a measurement of your business. The percentages are our own estimate of what's achievable today. Meant to sharpen the conversation, not to base a decision on.",
 
     "scan.cta.title": "This is the short version",
-    "scan.cta.body": "In a conversation we get to know your workflow and listen to your business. No sales talk, no projects pushed on you — just a conversation to see whether we can support you. If there's nothing sensible to automate, we'll say so.",
+    "scan.cta.body": "In a free conversation we get to know your workflow and listen to your business. No sales talk, no projects pushed on you — just a conversation to see whether we can support you. If there's nothing sensible to automate, we'll say so.",
     "scan.cta.button": "Start a conversation",
     "scan.cta.note": "We'll carry an overview of your scan over to the form, so you don't have to explain it again. You'll see it there and can leave it out with one click.",
 
