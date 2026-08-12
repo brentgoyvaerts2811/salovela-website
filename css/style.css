@@ -776,16 +776,12 @@ p {
 }
 
 .who-avatar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: var(--color-accent-dark);
+  object-fit: cover;
+  object-position: center;
 }
 
 .who-panel h2 {
@@ -795,6 +791,10 @@ p {
 .who-panel p {
   color: var(--color-text-soft);
   margin-bottom: 0;
+}
+
+.who-panel p + p {
+  margin-top: 1em;
 }
 
 .who-panel .social-link {
