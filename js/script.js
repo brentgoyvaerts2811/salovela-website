@@ -4,7 +4,7 @@ const translations = {
     "nav.process": "Aanpak",
     "nav.about": "Over",
     "nav.contact": "Contact",
-    "hero.title": "De beste ideeën over jouw bedrijf heb je zelf al. Wij bouwen ze.",
+    "hero.title": "De beste ideeën voor jouw bedrijf heb je zelf al. Wij bouwen ze.",
     "hero.subtitle": "AI-advies, tools op maat en automatisatie voor KMO's — altijd vertrekkend vanuit jouw manier van werken, nooit vanuit een kant-en-klare oplossing.",
     "hero.cta": "Plan een gesprek",
     "services.title": "Wat wij voor je doen",
