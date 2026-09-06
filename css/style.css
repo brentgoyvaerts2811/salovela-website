@@ -1998,3 +1998,22 @@ p {
     padding: 5px 11px;
   }
 }
+
+/* --- Over-pagina: kaart zonder flip (Waar we niet aan beginnen) --- */
+.card.card-plain {
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card.card-plain h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.35em;
+}
+
+.card.card-plain p {
+  color: var(--color-text-soft);
+  font-size: 0.95rem;
+  margin: 0;
+}
