@@ -1,0 +1,13 @@
+# Normaliseer regeleindes: in de repo altijd LF, ongeacht het besturingssysteem.
+# Voorkomt dat bestanden als volledig gewijzigd verschijnen na bewerking op Windows.
+* text=auto eol=lf
+
+# Binaire bestanden nooit aanraken
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.pdf binary
