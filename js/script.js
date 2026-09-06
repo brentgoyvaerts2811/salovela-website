@@ -239,7 +239,7 @@ const translations = {
     "nav.process": "Approach",
     "nav.about": "About",
     "nav.contact": "Contact",
-    "hero.title": "The best ideas about your business are already yours. We build them.",
+    "hero.title": "You already have the best ideas for your business. We build them.",
     "hero.subtitle": "AI advice, custom tools and automation for SMEs — always starting from the way you work, never from an off-the-shelf solution.",
     "hero.cta": "Schedule a call",
     "services.title": "What we do for you",
